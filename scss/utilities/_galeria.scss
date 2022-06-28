@@ -1,0 +1,36 @@
+
+
+/* GALERIA */
+
+.mainGaleria .container{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: #fff;
+    border-radius: 0.9rem;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0 0.9rem 2rem $sombra;
+    .lightbox-gallery {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        div{
+            margin: 0.6rem;
+            flex-basis: 9rem;
+        }
+        div > img{
+            width: 97%;
+            display: block;
+            margin: auto;
+        }
+    }
+}
+
+
+  
+
+  

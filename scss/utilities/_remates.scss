@@ -1,0 +1,20 @@
+
+/* REAMTES */
+
+.mainRemates{
+    display: grid;
+    grid-template-areas: "derecha"
+                         "izquierda";
+    .derecha{
+        grid-area: derecha;
+        h2{
+            text-align: center;
+        }
+    }
+    .izquierda{
+        grid-area: izquierda;
+        h2{
+            text-align: center;
+        }
+    }
+}
