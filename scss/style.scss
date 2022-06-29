@@ -68,12 +68,247 @@ header{
 
 footer{
     background: $colorRadial;
-    height: 3rem;
-    margin-top: 0.5rem;
+    height: 6rem;
+    margin-top: 0.4rem;
     font-size: 0.7rem;
     border-top: solid 0.1rem $colorOscuro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .social{
+        justify-content: center;
+        margin-bottom: 0%;
+        padding-bottom: 0%;
+        ul{
+            display: flex;
+            align-items: center;
+            margin: 0%;
+            padding-left: 0%;
+            padding: 0%;
+            li{
+                list-style: none;
+                margin-top: 0.2rem;
+                img{
+                    height: 2rem;
+                }
+            }
+        }    
+    }
     .derechos{
+        padding-top: 0.3rem;
+        margin: 0%;
         text-align: center;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 }
+
+/* MEDIA QUERIES PPAL */
+@media screen and (min-width: 768px){
+    
+    .navCel{
+        display: none;
+    }
+
+    header{
+        width: 100%;
+        height: 11rem;
+        .menuNav{
+            display: contents;
+            ul{
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 2rem;
+                text-decoration: none;
+                li{
+                    padding-right: 2rem;
+                    padding-top: 1.5rem;
+                    a{
+                        text-decoration: none;
+                        font-size: 1.2rem;
+                        color: $colorPrincipal;
+                        font-weight: bold;  
+                    } 
+                }
+            }
+        }
+    }
+
+    
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    header{
+        width: 100%;
+        height: 16vh;
+        .logo{
+            height: 12vh;
+            width: auto;
+            margin-left: 3%;
+            padding-top: 0.5vh;
+            padding-bottom: 0%;
+        }
+        .menuNav{
+            display: contents;
+            padding: -4%;
+            margin: -4%;
+            margin-bottom: 0%;
+            ul{
+                justify-content: right;
+                li{
+                    padding-right: 5%;
+                    padding-top: 0%;
+                }
+            }
+        }
+    }
+
+    main{
+        height: 72vh;
+    }
+
+    .mainIndex{
+        display: grid;
+        grid-template-areas: "primerImagen parrUno"
+                             "segundaImagen parrDos";
+        .parrUno{
+            grid-area: parrUno;
+            text-align: justify;
+            padding-left: 4%;
+            padding-right: 4%;
+            padding-top: 2%;
+        }
+        .parrDos{
+            grid-area: parrDos;
+            text-align: justify;
+            padding-left: 4%;
+            padding-right: 4%;
+            padding-top: 2%;
+        }
+        .extraText{
+            display: contents;
+            text-align: justify;  
+        }
+        .primerImagen{
+            grid-area: primerImagen;
+            height: 34vh;
+            width: auto;
+            margin-left: 6%;
+        }
+        .segundaImagen{
+            grid-area: segundaImagen;
+            height: 34vh;
+            width: auto;
+            margin-left: 6%;
+        }
+    }
+    .mainContacto{
+        background-image: url('../img/DSC_0621.JPEG');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        .ubicYcontacto{
+            border: solid $colorOscuro;
+            margin: auto;
+            padding: 0.5rem;
+            background-color: $clarito;
+            box-shadow: -2px 2px 10px $sombra;
+            display: flex;
+            width: 85%;
+            .contactForm{
+                border: none;
+                margin: 2.5rem;
+                width: 95%;
+                .contactanos{
+                    font-size: 1.5rem;
+                    padding: 1rem;
+                    text-align: center;
+                    color: $colorPrincipal;
+                    opacity: 100%;
+                }
+                .texto{
+                    height: 12rem;
+                    margin-top: 0%;
+                    margin-top: 0.3rem;
+                }
+            }
+            .mapa{
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                margin-left: 2.5rem;
+                margin-right: 2.5rem;
+                box-shadow: -2px 2px 10px $sombra;
+                width: 95%;
+            }
+        }
+    }
+    .mainSobrenosotros{
+        background-image: url(../img/DSC_0461.jpeg);
+        display: grid;
+        grid-template-areas: "agricultura ganaderia junco corral";
+        .agricultura card mt-3{
+            grid-area: agriculutra;
+            box-shadow: -2px 2px 10px $colorOscuro;
+        }
+        .ganaderia card mt-3{
+            grid-area: ganaderia;
+            box-shadow: -2px 2px 10px $colorOscuro;
+        }
+        .junco card mt-3{
+            grid-area: junco;
+            box-shadow: -2px 2px 10px $colorOscuro;
+        }
+        .corral card mt-3{
+            grid-area: corral;
+            box-shadow: -3px 3px 10px $colorOscuro;
+        }
+        div{
+            margin-top: 1rem;
+            img{
+                height: 10rem;
+        width: auto;
+        margin-top: 0.5rem;
+            } 
+        }
+    }
+    .mainGaleria{
+        height: 71vh;
+        width: 100%;
+        .container {
+            width: 95%;
+            height: 98%;
+            margin: auto;
+            margin-top: 1rem;
+            padding: 0.5rem;
+            background-color: #fff;
+            border-radius: 0.9rem;
+            overflow: hidden;
+            box-sizing: border-box;
+            box-shadow: 0 0.9rem 2rem $sombra;
+            .lightbox-gallery {
+                flex-direction: row;
+                align-items: center;
+                flex-wrap: wrap;
+                height: 100%;
+        img {
+            width: auto;
+            height: 100%;
+            margin: auto;
+        }
+            
+            }
+        }
+    }
+    
+
+    footer{
+        height: 12vh;
+        .derechos{
+            padding-top: 0.2rem;
+        }
+    }
+}
+    
+
+    
