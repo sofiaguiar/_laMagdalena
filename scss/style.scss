@@ -4,6 +4,21 @@
 @import "utilities/galeria";
 @import "utilities/remates";
 
+
+// MIXINS para flex
+
+@mixin flexColCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin noMargins {
+    margin: 0%;
+    padding: 0%;
+}
+
 body{
     font-family: 'Montserrat', sans-serif;
 }
@@ -68,23 +83,18 @@ header{
 
 footer{
     background: $colorRadial;
+    @include flexColCenter;
     height: 6rem;
     margin-top: 0.4rem;
     font-size: 0.7rem;
     border-top: solid 0.1rem $colorOscuro;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     .social{
         justify-content: center;
-        margin-bottom: 0%;
-        padding-bottom: 0%;
+        @include noMargins;
         ul{
             display: flex;
             align-items: center;
-            margin: 0%;
-            padding-left: 0%;
-            padding: 0%;
+            @include noMargins;
             li{
                 list-style: none;
                 margin-top: 0.2rem;
@@ -229,7 +239,6 @@ footer{
                 }
                 .texto{
                     height: 12rem;
-                    margin-top: 0%;
                     margin-top: 0.3rem;
                 }
             }

@@ -1,6 +1,15 @@
 
 /* CONTACTO */
 
+// EXTEND 
+%button{
+    text-align: center;
+    background-color: $colorPrincipal;
+    color: $clarito;
+}
+
+
+
 .mainContacto{
     background-image: url(../../img/DSC_0621.jpeg);
     background-repeat: repeat-y;
@@ -59,11 +68,17 @@
             margin-top: 0.3rem;
             margin-left: 1.8rem;
         }
-        .boton input{
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-            margin: 0%;
+        .button{
+            @extend %button;
+            padding: 0.5rem;
+            border-radius: 1rem;
+            margin-left: 40%;
+            margin-bottom: 5%;
+        }
+        .button:hover{
+            background-color: $clarito;
+            color: $colorPrincipal;
+            transition: 0.7s;
         }
     }
     .mapa{
