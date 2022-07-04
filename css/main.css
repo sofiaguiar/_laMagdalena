@@ -417,6 +417,8 @@ footer {
     height: 100%; }
     .mainRemates .prox {
       display: grid;
+      margin-left: 10%;
+      margin-right: 10%;
       grid-template-areas: "h2 h2" "fut1 fut2"; }
       .mainRemates .prox h2 {
         grid-area: h2; }
@@ -424,16 +426,22 @@ footer {
         grid-area: fut1; }
         .mainRemates .prox .fut1 img {
           width: 15%;
-          height: 90%;
+          height: 70%;
           margin-bottom: 1.5rem; }
+        .mainRemates .prox .fut1 p {
+          font-size: 1rem; }
       .mainRemates .prox .fut2 {
         grid-area: fut2; }
         .mainRemates .prox .fut2 img {
-          width: 18%;
-          height: 90%;
+          width: 15%;
+          height: 70%;
           margin-bottom: 1.5rem; }
+        .mainRemates .prox .fut2 p {
+          font-size: 1rem; }
     .mainRemates .pasados .rem {
       width: 25%; }
+      .mainRemates .pasados .rem a {
+        font-size: 0.8rem; }
   footer {
     height: 12vh; }
     footer .derechos {
