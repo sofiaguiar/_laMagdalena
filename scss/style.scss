@@ -144,6 +144,29 @@ footer{
         }
     }
 
+    .mainRemates{
+        .prox{
+            .fut1{
+                img{
+                    width: 10%;
+                    height: 6%;
+                    margin-top: 0.5rem;
+                }
+            }
+            .fut2{
+                img{
+                    width: 10%;
+                    height: 6%;
+                    margin-top: 0.5rem;
+                }
+            }
+        }
+        .pasados{
+            .rem{
+                width: 40%;
+            }
+        }
+    }
     
 
 }
@@ -310,6 +333,38 @@ footer{
         }
     }
     
+    .mainRemates{
+        height: 100%;
+        .prox{
+            display: grid;
+            grid-template-areas: "h2 h2"
+                                 "fut1 fut2";
+            h2{
+                grid-area: h2;
+            }
+            .fut1{
+                grid-area: fut1;
+                img{
+                    width: 15%;
+                    height: 90%;
+                    margin-bottom: 1.5rem;
+                }
+            }
+            .fut2{
+                grid-area: fut2;
+                img{
+                    width: 18%;
+                    height: 90%;
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+        .pasados{
+            .rem{
+                width: 25%;
+            }
+        }
+    }
 
     footer{
         height: 12vh;
