@@ -1,21 +1,41 @@
 /* SOBRE NOSOTROS */
-.mainSobrenosotros div {
-  display: block;
-  margin: auto; }
-  .mainSobrenosotros div a {
-    display: block;
+.mainSobrenosotros {
+  background-image: url(../../img/lineas.jpg);
+  background-size: 100%;
+  height: 100%;
+  padding-bottom: 3rem; }
+  .mainSobrenosotros .subTit {
+    font-family: 'Fjalla One', sans-serif;
+    color: #540b0e;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 1rem; }
+  .mainSobrenosotros .card {
     margin: auto;
-    background-color: #540b0e;
-    border: #540b0e; }
-  .mainSobrenosotros div div p {
-    text-align: center; }
-  .mainSobrenosotros div img {
-    display: block;
-    margin: auto;
-    height: auto;
-    width: 98%;
-    border-radius: 15%;
-    box-shadow: -2px 2px 10px #a5a5a5; }
+    margin-top: 6rem; }
+    .mainSobrenosotros .card a {
+      display: block;
+      width: 80%;
+      margin: auto;
+      background-color: #540b0e;
+      border: #540b0e; }
+      .mainSobrenosotros .card a :hover {
+        background-color: #eeebdd; }
+    .mainSobrenosotros .card .card-title {
+      text-align: center;
+      font-family: 'Fjalla One', sans-serif; }
+    .mainSobrenosotros .card .card-text {
+      text-align: center; }
+    .mainSobrenosotros .card img {
+      display: block;
+      margin: auto;
+      height: auto;
+      width: 90%;
+      border-radius: 10%;
+      box-shadow: -2px 2px 10px #a5a5a5; }
+
+.footerSobrenosotros {
+  margin: 0%; }
 
 /* CONTACTO */
 .mainContacto .contactForm .button {
@@ -24,7 +44,7 @@
   color: rgba(255, 255, 255, 0.7); }
 
 .mainContacto {
-  background-image: url(../../img/DSC_0621.jpeg);
+  background-image: url(../../img/lineas.jpg);
   background-repeat: repeat-y;
   background-size: 100%;
   display: grid;
@@ -41,40 +61,47 @@
     border: solid #3d3b3c; }
     .mainContacto .contactForm .contactanos {
       display: block;
-      font-size: 1.5rem;
       padding: 0.6rem;
       text-align: center;
-      color: #540b0e;
       opacity: 100%; }
+      .mainContacto .contactForm .contactanos h1 {
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 1.2rem;
+        color: #540b0e;
+        margin-top: 0.5rem; }
     .mainContacto .contactForm .nombre input {
       border: 0.1rem solid #3d3b3c;
-      height: 1.8rem;
+      height: 2rem;
       width: 90%;
       padding: 0.3rem;
-      margin: 0.2rem;
-      margin-left: 1.8rem; }
+      display: block;
+      margin: auto;
+      margin-top: 0.8rem; }
     .mainContacto .contactForm .mail input {
       border: 0.1rem solid #3d3b3c;
-      height: 1.8rem;
+      height: 2rem;
       width: 90%;
       padding: 0.3rem;
-      margin: 0.2rem;
-      margin-left: 1.8rem; }
+      display: block;
+      margin: auto;
+      margin-top: 0.8rem; }
     .mainContacto .contactForm .numero input {
       border: 0.1rem solid #3d3b3c;
-      height: 1.8rem;
+      height: 2rem;
       width: 90%;
       padding: 0.3rem;
-      margin: 0.2rem;
-      margin-left: 1.8rem; }
+      display: block;
+      margin: auto;
+      margin-top: 0.8rem; }
     .mainContacto .contactForm .texto input {
       border: 0.1rem solid #3d3b3c;
       height: 8rem;
       width: 90%;
-      margin: 0.2rem;
-      padding: 0.3rem;
-      margin-top: 0.3rem;
-      margin-left: 1.8rem; }
+      display: block;
+      margin: auto;
+      margin-top: 1.1rem;
+      margin-bottom: 1rem;
+      padding: 0.3rem; }
     .mainContacto .contactForm .button {
       padding: 0.5rem;
       border-radius: 1rem;
@@ -88,10 +115,10 @@
     grid-area: mapa;
     width: 95%;
     display: block;
-    margin-top: 0.5rem;
+    margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0.5rem;
+    margin-bottom: 3rem;
     box-shadow: -2px 2px 10px #a5a5a5; }
 
 .footerContacto {
@@ -102,7 +129,8 @@
   width: 90%;
   height: 100%;
   margin: auto;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   padding: 0.5rem;
   background-color: #fff;
   border-radius: 0.9rem;
@@ -117,21 +145,27 @@
     .mainGaleria .container .lightbox-gallery div {
       margin: 0.6rem;
       flex-basis: 9rem; }
-    .mainGaleria .container .lightbox-gallery div > img {
+    .mainGaleria .container .lightbox-gallery img {
       width: 97%;
       display: block;
       margin: auto; }
 
 /* REAMTES */
 .mainRemates {
+  background-image: url(../../img/lineas.jpg);
+  background-size: 150%;
   display: grid;
   grid-template-areas: "prox" "pasados"; }
   .mainRemates .prox {
     grid-area: prox;
+    background-color: #eeebdd;
+    box-shadow: -2px 2px 10px #a5a5a5;
     margin-left: 5%;
     margin-right: 5%;
-    border-bottom: dashed 0.1rem #3d3b3c; }
+    margin-top: 2rem;
+    margin-bottom: 1rem; }
     .mainRemates .prox h2 {
+      font-family: 'Fjalla One', sans-serif;
       padding: 1rem; }
     .mainRemates .prox .fut1 {
       display: flex;
@@ -164,7 +198,8 @@
     flex-wrap: wrap;
     justify-content: center; }
     .mainRemates .pasados .rem {
-      width: 80%; }
+      width: 85%;
+      box-shadow: -2px 2px 10px #a5a5a5; }
       .mainRemates .pasados .rem h5 {
         font-size: 0.8rem; }
       .mainRemates .pasados .rem a {
@@ -178,60 +213,125 @@ body {
   font-family: 'Montserrat', sans-serif; }
 
 header {
-  background: radial-gradient(#f2e8cf, #ddbea9);
+  background-color: #eeebdd;
   width: 100%;
-  border-bottom: solid 0.1rem #3d3b3c; }
-  header .logo {
-    height: 7rem;
-    width: auto;
-    display: block;
-    margin: auto;
-    padding: 0.5rem; }
-  header .navCel ul li {
-    background: radial;
-    opacity: 90%;
-    padding: 1rem; }
-  header .menuNav {
-    display: none; }
+  display: grid;
+  grid-template-areas: "tope" "menuYlogo"; }
+  header .tope {
+    grid-area: tope; }
+    header .tope .titulo {
+      text-align: center;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      font-size: 1.7rem;
+      color: #540b0e;
+      font-family: 'Fjalla One', sans-serif;
+      text-shadow: 1px 1px #a5a5a5;
+      margin-bottom: 0%; }
+    header .tope .subtitulo {
+      margin-top: 0.8rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      font-size: 1.2rem;
+      font-family: 'Fjalla One', sans-serif;
+      color: #540b0e;
+      text-shadow: 1px 1px #a5a5a5; }
+  header .menuYpag {
+    grid-area: menuYlogo;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f6f3eb;
+    box-shadow: -1px 1px 5px #a5a5a5; }
+    header .menuYpag .navCel {
+      margin-top: 1%; }
+    header .menuYpag ul li {
+      opacity: 90%;
+      padding: 1rem;
+      text-align: left; }
+    header .menuYpag .menuNav {
+      display: none; }
+    header .menuYpag .pagina {
+      display: block;
+      font-size: 1.2rem;
+      margin-right: 1rem;
+      margin-top: 1rem;
+      font-family: 'Fjalla One', sans-serif;
+      color: #3d3b3c; }
 
 .mainIndex {
   display: grid;
-  grid-template-areas: "parrUno" "primerImagen" "parrDos" "segundaImagen"; }
+  background-image: url(../img/lineas.jpg);
+  background-size: 270%;
+  height: 100%;
+  margin-bottom: 0;
+  grid-template-areas: "parrUno" "logo2" "primerImagen" "parrDos" "final"; }
   .mainIndex .parrUno {
     grid-area: parrUno;
+    font-family: 'Fjalla One', sans-serif;
     text-align: center;
-    margin: 1rem; }
+    font-weight: bold;
+    color: #540b0e;
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: -4%; }
+  .mainIndex .logo2 {
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem; }
   .mainIndex .primerImagen {
     grid-area: primerImagen;
     height: auto;
-    width: 80%;
+    width: 90%;
     display: block;
     margin: auto;
-    box-shadow: -2px 2px 10px #a5a5a5; }
+    box-shadow: -2px 2px 10px #a5a5a5;
+    margin-bottom: 2rem;
+    margin-top: 1.3rem; }
   .mainIndex .parrDos {
     grid-area: parrDos;
-    text-align: center;
-    margin: 1rem; }
-  .mainIndex .segundaImagen {
-    grid-area: segundaImagen;
-    width: 80%;
-    height: auto;
     display: block;
     margin: auto;
-    box-shadow: -2px 2px 10px #a5a5a5; }
-  .mainIndex .extraText {
-    display: none; }
+    width: 90%;
+    background-color: #f6f3eb;
+    box-shadow: -2px 2px 10px #a5a5a5;
+    border-radius: 8%; }
+    .mainIndex .parrDos .tit {
+      font-family: 'Fjalla One', sans-serif;
+      font-size: 1.5rem;
+      color: #540b0e;
+      margin-top: 1rem;
+      margin-left: 2rem;
+      text-align: left; }
+    .mainIndex .parrDos p {
+      text-align: justify;
+      margin-left: 1.1rem;
+      margin-right: 1.1rem; }
+  .mainIndex .final {
+    grid-area: final; }
+    .mainIndex .final .tit {
+      font-family: 'Fjalla One', sans-serif;
+      font-size: 1.5rem;
+      color: #540b0e;
+      margin-top: 1rem;
+      margin-left: 2rem;
+      text-align: left; }
+    .mainIndex .final .mapa {
+      display: block;
+      margin: auto;
+      width: 90%;
+      box-shadow: -2px 2px 10px #a5a5a5;
+      margin-bottom: 3rem; }
 
 footer {
-  background: radial-gradient(#f2e8cf, #ddbea9);
+  background-color: #f6f3eb;
+  box-shadow: -1px 1px 5px #a5a5a5;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 6rem;
-  margin-top: 0.4rem;
-  font-size: 0.7rem;
-  border-top: solid 0.1rem #3d3b3c; }
+  height: 7rem;
+  font-size: 0.8rem; }
   footer .social {
     justify-content: center;
     margin: 0%;
@@ -254,27 +354,113 @@ footer {
 
 /* MEDIA QUERIES PPAL */
 @media screen and (min-width: 768px) {
-  .navCel {
+  header .tope .titulo {
+    font-size: 2.5rem; }
+  header .tope .subtitulo {
+    font-size: 1.3rem;
+    margin-bottom: 2rem; }
+  header .menuYpag .navCel {
     display: none; }
-  header {
+  header .menuYpag .pagina {
+    display: none; }
+  header .menuYpag .menuNav {
+    display: contents;
+    display: flex;
     width: 100%;
-    height: 11rem; }
-    header .menuNav {
-      display: contents; }
-      header .menuNav ul {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 2rem;
-        text-decoration: none; }
-        header .menuNav ul li {
-          padding-right: 2rem;
-          padding-top: 1.5rem; }
-          header .menuNav ul li a {
-            text-decoration: none;
-            font-size: 1.2rem;
-            color: #540b0e;
-            font-weight: bold; }
+    justify-content: center;
+    background-color: #f6f3eb;
+    box-shadow: -1px 1px 5px #a5a5a5; }
+    header .menuYpag .menuNav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center; }
+      header .menuYpag .menuNav ul li a {
+        text-decoration: none;
+        font-family: 'Ubuntu Condensed', sans-serif;
+        font-size: 1.8rem;
+        color: #3d3b3c;
+        font-weight: bold; }
+  .mainIndex {
+    background-size: 180%; }
+    .mainIndex .parrUno {
+      font-size: 2.5rem;
+      margin-top: 4rem; }
+    .mainIndex .logo2 {
+      width: 70%; }
+    .mainIndex .primerImagen {
+      grid-area: primerImagen;
+      height: auto;
+      width: 90%;
+      display: block;
+      margin: auto;
+      box-shadow: -2px 2px 10px #a5a5a5;
+      margin-bottom: 2rem;
+      margin-top: 1.3rem; }
+    .mainIndex .parrDos {
+      grid-area: parrDos;
+      display: block;
+      margin: auto;
+      width: 90%;
+      background-color: #f6f3eb;
+      box-shadow: -2px 2px 10px #a5a5a5;
+      border-radius: 8%; }
+      .mainIndex .parrDos .tit {
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 1.5rem;
+        color: #540b0e;
+        margin-top: 1rem;
+        margin-left: 2rem;
+        text-align: left; }
+      .mainIndex .parrDos p {
+        text-align: justify;
+        margin-left: 1.1rem;
+        margin-right: 1.1rem; }
+    .mainIndex .final {
+      grid-area: final; }
+      .mainIndex .final .tit {
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 1.5rem;
+        color: #540b0e;
+        margin-top: 1rem;
+        margin-left: 2rem;
+        text-align: left; }
+      .mainIndex .final .mapa {
+        display: block;
+        margin: auto;
+        width: 90%;
+        box-shadow: -2px 2px 10px #a5a5a5;
+        margin-bottom: 3rem; }
+  .mainSobrenosotros .subTit {
+    font-family: 'Fjalla One', sans-serif;
+    color: #540b0e;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 1rem; }
+  .mainSobrenosotros .card {
+    margin: auto;
+    margin-top: 6rem; }
+    .mainSobrenosotros .card a {
+      display: block;
+      width: 80%;
+      margin: auto;
+      background-color: #540b0e;
+      border: #540b0e; }
+      .mainSobrenosotros .card a :hover {
+        background-color: #eeebdd; }
+    .mainSobrenosotros .card .card-title {
+      text-align: justify;
+      font-family: 'Fjalla One', sans-serif;
+      font-size: 1.8rem; }
+    .mainSobrenosotros .card .card-text {
+      text-align: justify;
+      font-size: 1.2rem; }
+    .mainSobrenosotros .card img {
+      display: block;
+      margin: auto;
+      height: auto;
+      width: 90%;
+      border-radius: 10%;
+      box-shadow: -2px 2px 10px #a5a5a5; }
   .mainRemates .prox .fut1 img {
     width: 10%;
     height: 6%;
@@ -288,131 +474,142 @@ footer {
 
 @media screen and (min-width: 1024px) {
   header {
+    background-color: #eeebdd;
     width: 100%;
-    height: 16vh; }
-    header .logo {
-      height: 12vh;
-      width: auto;
-      margin-left: 3%;
-      padding-top: 0.5vh;
-      padding-bottom: 0%; }
-    header .menuNav {
-      display: contents;
-      padding: -4%;
-      margin: -4%;
-      margin-bottom: 0%; }
-      header .menuNav ul {
-        justify-content: right; }
-        header .menuNav ul li {
-          padding-right: 5%;
-          padding-top: 0%; }
-  main {
-    height: 72vh; }
-  .mainIndex {
     display: grid;
-    grid-template-areas: "primerImagen parrUno" "segundaImagen parrDos"; }
+    grid-template-areas: "tope" "menuYlogo"; }
+    header .tope .titulo {
+      margin-top: 1.5rem;
+      margin-bottom: -0.5rem;
+      font-size: 3rem; }
+    header .tope .subtitulo {
+      margin-bottom: 1.5rem;
+      font-size: 2.3rem;
+      color: #540b0e;
+      text-shadow: 1px 1px #a5a5a5; }
+    header .menuYpag .navCel {
+      display: none; }
+    header .menuYpag .menuNav .menuNav {
+      display: contents;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      background-color: #f6f3eb;
+      box-shadow: -1px 1px 5px #a5a5a5; }
+      header .menuYpag .menuNav .menuNav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center; }
+        header .menuYpag .menuNav .menuNav ul li a {
+          text-decoration: none;
+          font-family: 'Ubuntu Condensed', sans-serif;
+          font-size: 1.8rem;
+          color: #3d3b3c;
+          font-weight: bold; }
+    header .menuYpag .pagina {
+      display: none; }
+  .mainIndex {
+    grid-template-areas: "parrUno parrUno" "logo2" "primerImagen parrDos" "final final"; }
     .mainIndex .parrUno {
       grid-area: parrUno;
-      text-align: justify;
-      padding-left: 4%;
-      padding-right: 4%;
-      padding-top: 2%; }
-    .mainIndex .parrDos {
-      grid-area: parrDos;
-      text-align: justify;
-      padding-left: 4%;
-      padding-right: 4%;
-      padding-top: 2%; }
-    .mainIndex .extraText {
-      display: contents;
-      text-align: justify; }
+      font-family: 'Fjalla One', sans-serif;
+      text-align: center;
+      font-weight: bold;
+      color: #540b0e;
+      font-size: 2rem;
+      margin-top: 3rem;
+      margin-bottom: -4%; }
+    .mainIndex .logo2 {
+      width: 35%;
+      display: block;
+      margin: auto; }
     .mainIndex .primerImagen {
-      grid-area: primerImagen;
-      height: 34vh;
-      width: auto;
-      margin-left: 6%; }
-    .mainIndex .segundaImagen {
-      grid-area: segundaImagen;
-      height: 34vh;
-      width: auto;
-      margin-left: 6%; }
-  .mainContacto {
-    background-image: url("../img/DSC_0621.JPEG");
-    background-repeat: no-repeat;
-    background-size: 100%; }
-    .mainContacto .ubicYcontacto {
-      border: solid #3d3b3c;
-      margin: auto;
-      padding: 0.5rem;
-      background-color: rgba(255, 255, 255, 0.7);
-      box-shadow: -2px 2px 10px #a5a5a5;
-      display: flex;
-      width: 85%; }
-      .mainContacto .ubicYcontacto .contactForm {
-        border: none;
-        margin: 2.5rem;
-        width: 95%; }
-        .mainContacto .ubicYcontacto .contactForm .contactanos {
-          font-size: 1.5rem;
-          padding: 1rem;
-          text-align: center;
-          color: #540b0e;
-          opacity: 100%; }
-        .mainContacto .ubicYcontacto .contactForm .texto {
-          height: 12rem;
-          margin-top: 0.3rem; }
-      .mainContacto .ubicYcontacto .mapa {
+      width: 80%; }
+    .mainIndex .parrDos {
+      margin-top: 2rem;
+      margin-bottom: 2rem; }
+      .mainIndex .parrDos .tit {
+        font-size: 2.5rem;
+        color: #540b0e;
         margin-top: 1rem;
-        margin-bottom: 1rem;
-        margin-left: 2.5rem;
-        margin-right: 2.5rem;
+        margin-left: 2rem;
+        text-align: center; }
+      .mainIndex .parrDos p {
+        text-align: justify;
+        margin-left: 1.1rem;
+        margin-right: 1.1rem; }
+    .mainIndex .final {
+      grid-area: final; }
+      .mainIndex .final .tit {
+        font-size: 2.5rem;
+        margin-top: 1rem;
+        text-align: center; }
+      .mainIndex .final .mapa {
+        display: block;
+        margin: auto;
+        width: 90%;
         box-shadow: -2px 2px 10px #a5a5a5;
-        width: 95%; }
+        margin-bottom: 3rem; }
+  /* SOBRE NOSOTROS */
   .mainSobrenosotros {
-    background-image: url(../img/DSC_0461.jpeg);
+    background-image: url(../../img/lineas.jpg);
     display: grid;
-    grid-template-areas: "agricultura ganaderia junco corral"; }
-    .mainSobrenosotros .agricultura card mt-3 {
-      grid-area: agriculutra;
-      box-shadow: -2px 2px 10px #3d3b3c; }
-    .mainSobrenosotros .ganaderia card mt-3 {
-      grid-area: ganaderia;
-      box-shadow: -2px 2px 10px #3d3b3c; }
-    .mainSobrenosotros .junco card mt-3 {
-      grid-area: junco;
-      box-shadow: -2px 2px 10px #3d3b3c; }
-    .mainSobrenosotros .corral card mt-3 {
-      grid-area: corral;
-      box-shadow: -3px 3px 10px #3d3b3c; }
-    .mainSobrenosotros div {
-      margin-top: 1rem; }
-      .mainSobrenosotros div img {
-        height: 10rem;
-        width: auto;
-        margin-top: 0.5rem; }
-  .mainGaleria {
-    height: 71vh;
-    width: 100%; }
-    .mainGaleria .container {
-      width: 95%;
-      height: 98%;
-      margin: auto;
-      margin-top: 1rem;
-      padding: 0.5rem;
-      background-color: #fff;
-      border-radius: 0.9rem;
-      overflow: hidden;
-      box-sizing: border-box;
-      box-shadow: 0 0.9rem 2rem #a5a5a5; }
-      .mainGaleria .container .lightbox-gallery {
-        flex-direction: row;
-        align-items: center;
-        flex-wrap: wrap;
-        height: 100%; }
-        .mainGaleria .container .lightbox-gallery img {
-          width: auto;
-          height: 100%;
-          margin: auto; }
+    grid-template-areas: "agricultura ganaderia planta corrales"; }
+    .mainSobrenosotros .agricultura {
+      grid-area: agricultura; }
+    .mainSobrenosotros .ganaderia {
+      grid-area: ganaderia; }
+    .mainSobrenosotros .planta {
+      grid-area: planta; }
+    .mainSobrenosotros .corrales {
+      grid-area: corrales; }
+    .mainSobrenosotros .subTit {
+      display: none; }
+    .mainSobrenosotros .card {
+      margin: auto; }
+      .mainSobrenosotros .card a {
+        display: block;
+        width: 90%;
+        margin: auto;
+        background-color: #540b0e;
+        border: #540b0e; }
+        .mainSobrenosotros .card a a:hover {
+          background-color: #eeebdd; }
+      .mainSobrenosotros .card .card-title {
+        text-align: center; }
+      .mainSobrenosotros .card .card-text {
+        text-align: justify; }
+      .mainSobrenosotros .card img {
+        display: block;
+        margin: auto;
+        height: auto;
+        width: 90%;
+        border-radius: 10%;
+        box-shadow: -2px 2px 10px #a5a5a5; }
+  .mainGaleria .container {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    background-color: #fff;
+    border-radius: 0.9rem;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0 0.9rem 2rem #a5a5a5; }
+    .mainGaleria .container .lightbox-gallery {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .mainGaleria .container .lightbox-gallery div {
+        margin: 0.6rem;
+        flex-basis: 9rem; }
+      .mainGaleria .container .lightbox-gallery img {
+        width: 97%;
+        display: block;
+        margin: auto; }
   .mainRemates {
     height: 100%; }
     .mainRemates .prox {
@@ -446,3 +643,36 @@ footer {
     height: 12vh; }
     footer .derechos {
       padding-top: 0.2rem; } }
+
+.mainContacto {
+  background-image: url(../../img/lineas.jpg);
+  background-repeat: repeat-y;
+  background-size: 100%;
+  display: grid;
+  grid-template-areas: "contactForm" "mapa";
+  align-items: center; }
+  .mainContacto .ubicYcontacto {
+    border: solid #3d3b3c;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: -2px 2px 10px #a5a5a5;
+    display: flex;
+    width: 85%; }
+    .mainContacto .ubicYcontacto .contactForm {
+      border: none;
+      margin: 0.7rem;
+      width: 90%; }
+      .mainContacto .ubicYcontacto .contactForm .contactanos {
+        font-size: 1.5rem;
+        text-align: center;
+        color: #540b0e;
+        opacity: 100%; }
+      .mainContacto .ubicYcontacto .contactForm .texto {
+        height: 8rem;
+        margin-bottom: 1rem; }
+    .mainContacto .ubicYcontacto .mapa {
+      margin: 0.3rem;
+      box-shadow: -2px 2px 10px #a5a5a5;
+      width: 95%; }

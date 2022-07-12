@@ -3,15 +3,21 @@
 
 
 .mainRemates{
+    background-image: url(../../img/lineas.jpg);
+    background-size: 150%;
     display: grid;
     grid-template-areas: "prox"
                          "pasados";
     .prox{
         grid-area: prox;
+        background-color: rgb(238, 235, 221);
+        box-shadow: -2px 2px 10px $sombra;
         margin-left: 5%;
         margin-right: 5%;
-        border-bottom: dashed 0.1rem $colorOscuro;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
         h2{
+            font-family: 'Fjalla One', sans-serif;
             padding: 1rem;
         }
         .fut1{
@@ -52,7 +58,8 @@
         flex-wrap: wrap;
         justify-content: center;
         .rem{
-            width: 80%;
+            width: 85%;
+            box-shadow: -2px 2px 10px $sombra;
             h5 {
                 font-size: 0.8rem;
             }
