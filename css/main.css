@@ -215,22 +215,24 @@ body {
 header {
   background-color: #eeebdd;
   width: 100%;
+  position: sticky;
+  top: 0;
   display: grid;
   grid-template-areas: "tope" "menuYlogo"; }
   header .tope {
     grid-area: tope; }
     header .tope .titulo {
       text-align: center;
-      margin-top: 2rem;
-      margin-bottom: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
       font-size: 1.7rem;
       color: #540b0e;
       font-family: 'Fjalla One', sans-serif;
       text-shadow: 1px 1px #a5a5a5;
       margin-bottom: 0%; }
     header .tope .subtitulo {
-      margin-top: 0.8rem;
-      margin-bottom: 2rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
       text-align: center;
       font-size: 1.2rem;
       font-family: 'Fjalla One', sans-serif;
@@ -248,6 +250,9 @@ header {
       opacity: 90%;
       padding: 1rem;
       text-align: left; }
+    header .menuYpag li:nth-child(1) {
+      text-decoration: underline;
+      text-underline-offset: 0.4rem; }
     header .menuYpag .menuNav {
       display: none; }
     header .menuYpag .pagina {
@@ -358,7 +363,7 @@ footer {
     font-size: 2.5rem; }
   header .tope .subtitulo {
     font-size: 1.3rem;
-    margin-bottom: 2rem; }
+    margin-bottom: 1rem; }
   header .menuYpag .navCel {
     display: none; }
   header .menuYpag .pagina {
@@ -367,6 +372,7 @@ footer {
     display: contents;
     display: flex;
     width: 100%;
+    height: 4rem;
     justify-content: center;
     background-color: #f6f3eb;
     box-shadow: -1px 1px 5px #a5a5a5; }
@@ -479,11 +485,11 @@ footer {
     display: grid;
     grid-template-areas: "tope" "menuYlogo"; }
     header .tope .titulo {
-      margin-top: 1.5rem;
-      margin-bottom: -0.5rem;
+      margin-top: 0.5rem;
+      margin-bottom: -0.8rem;
       font-size: 2.4rem; }
     header .tope .subtitulo {
-      margin-bottom: 1.5rem;
+      margin-bottom: 0.7rem;
       font-size: 2rem;
       color: #540b0e;
       text-shadow: 1px 1px #a5a5a5; }
@@ -496,16 +502,6 @@ footer {
       justify-content: center;
       background-color: #f6f3eb;
       box-shadow: -1px 1px 5px #a5a5a5; }
-      header .menuYpag .menuNav .menuNav ul {
-        list-style: none;
-        display: flex;
-        justify-content: center; }
-        header .menuYpag .menuNav .menuNav ul li a {
-          text-decoration: none;
-          font-family: 'Ubuntu Condensed', sans-serif;
-          font-size: 1.8rem;
-          color: #3d3b3c;
-          font-weight: bold; }
     header .menuYpag .pagina {
       display: none; }
   .mainIndex {
@@ -536,8 +532,11 @@ footer {
         text-align: center; }
       .mainIndex .parrDos p {
         text-align: justify;
+        font-size: 1.5rem;
         margin-left: 1.1rem;
-        margin-right: 1.1rem; }
+        margin-right: 1.1rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem; }
     .mainIndex .final {
       grid-area: final; }
       .mainIndex .final .tit {
@@ -566,19 +565,24 @@ footer {
     .mainSobrenosotros .subTit {
       display: none; }
     .mainSobrenosotros .card {
-      margin: auto; }
+      margin: auto;
+      width: 100%;
+      margin-bottom: -1.5rem; }
       .mainSobrenosotros .card a {
         display: block;
         width: 90%;
+        font-size: 0.8rem;
         margin: auto;
         background-color: #540b0e;
         border: #540b0e; }
         .mainSobrenosotros .card a a:hover {
           background-color: #eeebdd; }
       .mainSobrenosotros .card .card-title {
-        text-align: center; }
+        text-align: center;
+        font-size: 1.5rem; }
       .mainSobrenosotros .card .card-text {
-        text-align: justify; }
+        text-align: justify;
+        font-size: 0.9rem; }
       .mainSobrenosotros .card img {
         display: block;
         margin: auto;
