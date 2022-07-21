@@ -508,17 +508,20 @@ footer {
     grid-template-areas: "parrUno parrUno" "logo2" "primerImagen parrDos" "final final"; }
     .mainIndex .parrUno {
       grid-area: parrUno;
+      display: none;
       font-family: 'Fjalla One', sans-serif;
       text-align: center;
       font-weight: bold;
       color: #540b0e;
-      font-size: 2rem;
+      font-size: 3rem;
       margin-top: 3rem;
-      margin-bottom: -4%; }
+      margin-bottom: 1rem; }
     .mainIndex .logo2 {
       width: 35%;
       display: block;
-      margin: auto; }
+      margin: auto;
+      margin-top: 2rem;
+      margin-bottom: 2rem; }
     .mainIndex .primerImagen {
       width: 80%; }
     .mainIndex .parrDos {
