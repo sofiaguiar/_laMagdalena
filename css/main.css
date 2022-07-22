@@ -1,41 +1,104 @@
 /* SOBRE NOSOTROS */
 .mainSobrenosotros {
   background-image: url(../../img/lineas.jpg);
-  background-size: 100%;
+  background-size: 70%;
   height: 100%;
-  padding-bottom: 3rem; }
-  .mainSobrenosotros .subTit {
-    font-family: 'Fjalla One', sans-serif;
-    color: #540b0e;
-    font-size: 2.5rem;
-    text-align: center;
-    padding-top: 1rem; }
-  .mainSobrenosotros .card {
-    margin: auto;
-    margin-top: 6rem; }
-    .mainSobrenosotros .card a {
-      display: block;
-      width: 80%;
-      margin: auto;
-      background-color: #540b0e;
-      border: #540b0e; }
-      .mainSobrenosotros .card a :hover {
-        background-color: #eeebdd; }
-    .mainSobrenosotros .card .card-title {
-      text-align: center;
-      font-family: 'Fjalla One', sans-serif; }
-    .mainSobrenosotros .card .card-text {
+  padding-bottom: 3rem;
+  display: grid;
+  grid-template-areas: "subtit" "agricultura" "ganaderia" "planta" "feedlot"; }
+  .mainSobrenosotros .subtit {
+    grid-area: subtit;
+    margin-top: 1rem; }
+    .mainSobrenosotros .subtit .subTit {
+      font-size: 1.7rem;
+      color: #540b0e;
+      font-family: 'Fjalla One', sans-serif;
+      text-shadow: 1px 1px #a5a5a5;
       text-align: center; }
-    .mainSobrenosotros .card img {
+  .mainSobrenosotros .agricultura {
+    grid-area: agricultura;
+    background-color: rgba(238, 235, 221, 0.6);
+    box-shadow: -2px 2px 10px #a5a5a5;
+    width: 95%;
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem; }
+    .mainSobrenosotros .agricultura .texxt h5 {
+      font-size: 1.5rem;
+      font-family: 'Fjalla One', sans-serif;
+      text-shadow: 1px 1px #a5a5a5;
+      margin: 1rem; }
+    .mainSobrenosotros .agricultura .texxt p {
+      text-align: justify;
+      margin: 0.5rem; }
+    .mainSobrenosotros .agricultura .foto img {
+      width: 80%;
       display: block;
       margin: auto;
-      height: auto;
-      width: 90%;
-      border-radius: 10%;
-      box-shadow: -2px 2px 10px #a5a5a5; }
-
-.footerSobrenosotros {
-  margin: 0%; }
+      margin-bottom: 0.5rem; }
+  .mainSobrenosotros .ganaderia {
+    grid-area: ganaderia;
+    background-color: rgba(238, 235, 221, 0.6);
+    box-shadow: -2px 2px 10px #a5a5a5;
+    width: 95%;
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem; }
+    .mainSobrenosotros .ganaderia .texxt h5 {
+      font-size: 1.5rem;
+      font-family: 'Fjalla One', sans-serif;
+      text-shadow: 1px 1px #a5a5a5;
+      margin: 1rem; }
+    .mainSobrenosotros .ganaderia .texxt p {
+      text-align: justify;
+      margin: 0.5rem; }
+    .mainSobrenosotros .ganaderia .foto img {
+      width: 80%;
+      display: block;
+      margin: auto;
+      margin-bottom: 0.5rem; }
+  .mainSobrenosotros .planta {
+    grid-area: planta;
+    background-color: rgba(238, 235, 221, 0.6);
+    box-shadow: -2px 2px 10px #a5a5a5;
+    width: 95%;
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem; }
+    .mainSobrenosotros .planta .texxt h5 {
+      font-size: 1.5rem;
+      font-family: 'Fjalla One', sans-serif;
+      text-shadow: 1px 1px #a5a5a5;
+      margin: 1rem; }
+    .mainSobrenosotros .planta .texxt p {
+      text-align: justify;
+      margin: 0.5rem; }
+    .mainSobrenosotros .planta .foto img {
+      width: 80%;
+      display: block;
+      margin: auto;
+      margin-bottom: 0.5rem; }
+  .mainSobrenosotros .feedlot {
+    grid-area: feedlot;
+    background-color: rgba(238, 235, 221, 0.6);
+    box-shadow: -2px 2px 10px #a5a5a5;
+    width: 95%;
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem; }
+    .mainSobrenosotros .feedlot .texxt h5 {
+      font-size: 1.5rem;
+      font-family: 'Fjalla One', sans-serif;
+      text-shadow: 1px 1px #a5a5a5;
+      margin: 1rem; }
+    .mainSobrenosotros .feedlot .texxt p {
+      text-align: justify;
+      margin: 0.5rem; }
+    .mainSobrenosotros .feedlot .foto img {
+      width: 80%;
+      display: block;
+      margin: auto;
+      margin-bottom: 0.5rem; }
 
 /* CONTACTO */
 .mainContacto .contactForm .button {
@@ -153,52 +216,32 @@
 /* REAMTES */
 .mainRemates {
   background-image: url(../../img/lineas.jpg);
-  background-size: 150%;
+  background-size: 80%;
   display: grid;
   grid-template-areas: "prox" "pasados"; }
   .mainRemates .prox {
-    grid-area: prox;
-    background-color: #eeebdd;
+    background-color: rgba(238, 235, 221, 0.8);
     box-shadow: -2px 2px 10px #a5a5a5;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 2rem;
-    margin-bottom: 1rem; }
-    .mainRemates .prox h2 {
-      font-family: 'Fjalla One', sans-serif;
-      padding: 1rem; }
-    .mainRemates .prox .fut1 {
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    width: 95%; }
+    .mainRemates .prox .tit {
+      font-size: 1.8rem; }
+    .mainRemates .prox .proxi {
       display: flex;
-      margin-right: 1rem;
-      margin-left: 1rem; }
-      .mainRemates .prox .fut1 img {
-        width: 20%;
-        height: 10%;
-        margin-top: 0.5rem; }
-      .mainRemates .prox .fut1 p {
-        padding: 0.5rem;
-        margin-top: 0.8rem;
-        font-size: 0.8rem; }
-    .mainRemates .prox .fut2 {
-      display: flex;
-      margin-right: 1rem;
-      margin-left: 1rem; }
-      .mainRemates .prox .fut2 img {
-        width: 20%;
-        height: 10%;
-        margin-top: 0.5rem;
-        margin-bottom: 1rem; }
-      .mainRemates .prox .fut2 p {
-        padding: 0.5rem;
-        margin-top: 0.8rem;
-        font-size: 0.8rem; }
+      flex-direction: column;
+      margin: auto; }
+      .mainRemates .prox .proxi img {
+        height: 3rem; }
   .mainRemates .pasados {
     grid-area: pasados;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center; }
+    flex-wrap: wrap; }
     .mainRemates .pasados .rem {
-      width: 85%;
+      display: flex;
+      flex-wrap: wrap;
+      width: 95%;
       box-shadow: -2px 2px 10px #a5a5a5; }
       .mainRemates .pasados .rem h5 {
         font-size: 0.8rem; }
@@ -215,29 +258,26 @@ body {
 header {
   background-color: #eeebdd;
   width: 100%;
-  position: sticky;
-  top: 0;
   display: grid;
-  grid-template-areas: "tope" "menuYlogo"; }
-  header .tope {
-    grid-area: tope; }
-    header .tope .titulo {
-      text-align: center;
-      margin-top: 1rem;
-      margin-bottom: 1.5rem;
-      font-size: 1.7rem;
-      color: #540b0e;
-      font-family: 'Fjalla One', sans-serif;
-      text-shadow: 1px 1px #a5a5a5;
-      margin-bottom: 0%; }
-    header .tope .subtitulo {
-      margin-top: 0.5rem;
-      margin-bottom: 1rem;
-      text-align: center;
-      font-size: 1.2rem;
-      font-family: 'Fjalla One', sans-serif;
-      color: #540b0e;
-      text-shadow: 1px 1px #a5a5a5; }
+  grid-template-areas: "arr" "menuYlogo"; }
+  header .arr {
+    grid-area: arr; }
+    header .arr .social {
+      display: none; }
+      header .arr .social ul {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        header .arr .social ul li {
+          list-style: none; }
+          header .arr .social ul li img {
+            height: 2rem; }
+    header .arr .logo {
+      height: 6rem;
+      display: block;
+      margin: auto;
+      margin-top: 0.3rem;
+      margin-bottom: 1.2rem; }
   header .menuYpag {
     grid-area: menuYlogo;
     display: flex;
@@ -250,9 +290,8 @@ header {
       opacity: 90%;
       padding: 1rem;
       text-align: left; }
-    header .menuYpag li:nth-child(1) {
-      text-decoration: underline;
-      text-underline-offset: 0.4rem; }
+    header .menuYpag ul li:hover {
+      font-weight: bold; }
     header .menuYpag .menuNav {
       display: none; }
     header .menuYpag .pagina {
@@ -261,57 +300,65 @@ header {
       margin-right: 1rem;
       margin-top: 1rem;
       font-family: 'Fjalla One', sans-serif;
-      color: #3d3b3c; }
+      color: rgba(255, 255, 255, 0.7); }
 
 .mainIndex {
   display: grid;
   background-image: url(../img/lineas.jpg);
-  background-size: 270%;
+  background-size: 100%;
   height: 100%;
   margin-bottom: 0;
-  grid-template-areas: "parrUno" "logo2" "primerImagen" "parrDos" "final"; }
-  .mainIndex .parrUno {
-    grid-area: parrUno;
-    font-family: 'Fjalla One', sans-serif;
-    text-align: center;
-    font-weight: bold;
-    color: #540b0e;
-    font-size: 2rem;
-    margin-top: 3rem;
-    margin-bottom: -4%; }
-  .mainIndex .logo2 {
-    width: 70%;
-    display: block;
-    margin: auto;
-    margin-bottom: 2rem; }
-  .mainIndex .primerImagen {
-    grid-area: primerImagen;
-    height: auto;
-    width: 90%;
-    display: block;
-    margin: auto;
-    box-shadow: -2px 2px 10px #a5a5a5;
-    margin-bottom: 2rem;
-    margin-top: 1.3rem; }
+  grid-template-areas: "carousel" "tope" "parrDos" "final"; }
+  .mainIndex .carousel {
+    grid-area: carousel;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem; }
+    .mainIndex .carousel .carousel-caption {
+      background-color: rgba(249, 249, 224, 0.6);
+      color: #540b0e;
+      font-family: 'Fjalla One', sans-serif;
+      text-shadow: 1px 1px #a5a5a5;
+      border-radius: 4%; }
+  .mainIndex .tope {
+    grid-area: tope; }
+    .mainIndex .tope .titulo {
+      text-align: center;
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 1.7rem;
+      color: #540b0e;
+      font-family: 'Fjalla One', sans-serif;
+      text-shadow: 1px 1px #a5a5a5;
+      margin-bottom: 0%; }
+    .mainIndex .tope .subtitulo {
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      font-size: 1.2rem;
+      font-family: 'Fjalla One', sans-serif;
+      color: #540b0e;
+      text-shadow: 1px 1px #a5a5a5; }
   .mainIndex .parrDos {
     grid-area: parrDos;
     display: block;
     margin: auto;
     width: 90%;
-    background-color: #f6f3eb;
+    background-color: rgba(238, 235, 221, 0.6);
     box-shadow: -2px 2px 10px #a5a5a5;
-    border-radius: 8%; }
-    .mainIndex .parrDos .tit {
+    border-radius: 2%; }
+    .mainIndex .parrDos .uno .tit {
       font-family: 'Fjalla One', sans-serif;
       font-size: 1.5rem;
       color: #540b0e;
       margin-top: 1rem;
       margin-left: 2rem;
       text-align: left; }
-    .mainIndex .parrDos p {
+    .mainIndex .parrDos .uno p {
       text-align: justify;
       margin-left: 1.1rem;
       margin-right: 1.1rem; }
+    .mainIndex .parrDos .dos {
+      display: none; }
   .mainIndex .final {
     grid-area: final; }
     .mainIndex .final .tit {
@@ -359,11 +406,7 @@ footer {
 
 /* MEDIA QUERIES PPAL */
 @media screen and (min-width: 768px) {
-  header .tope .titulo {
-    font-size: 2.5rem; }
-  header .tope .subtitulo {
-    font-size: 1.3rem;
-    margin-bottom: 1rem; }
+  /* INDEX */
   header .menuYpag .navCel {
     display: none; }
   header .menuYpag .pagina {
@@ -372,63 +415,77 @@ footer {
     display: contents;
     display: flex;
     width: 100%;
-    height: 4rem;
+    height: 3.5rem;
     justify-content: center;
     background-color: #f6f3eb;
     box-shadow: -1px 1px 5px #a5a5a5; }
     header .menuYpag .menuNav ul {
       list-style: none;
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      align-items: center; }
       header .menuYpag .menuNav ul li a {
         text-decoration: none;
         font-family: 'Ubuntu Condensed', sans-serif;
-        font-size: 1.8rem;
-        color: #3d3b3c;
-        font-weight: bold; }
-  .mainIndex {
-    background-size: 180%; }
-    .mainIndex .parrUno {
-      font-size: 2.5rem;
-      margin-top: 4rem; }
-    .mainIndex .logo2 {
-      width: 70%; }
-    .mainIndex .primerImagen {
-      grid-area: primerImagen;
-      height: auto;
-      width: 90%;
-      display: block;
-      margin: auto;
-      box-shadow: -2px 2px 10px #a5a5a5;
-      margin-bottom: 2rem;
-      margin-top: 1.3rem; }
-    .mainIndex .parrDos {
-      grid-area: parrDos;
-      display: block;
-      margin: auto;
-      width: 90%;
-      background-color: #f6f3eb;
-      box-shadow: -2px 2px 10px #a5a5a5;
-      border-radius: 8%; }
-      .mainIndex .parrDos .tit {
-        font-family: 'Fjalla One', sans-serif;
         font-size: 1.5rem;
+        color: #3d3b3c; }
+  /* INDEX */
+  .mainIndex {
+    display: grid;
+    background-image: url(../img/lineas.jpg);
+    background-size: 250%;
+    height: 100%;
+    margin-bottom: 0;
+    grid-template-areas: "carousel" "tope" "parrDos" "final"; }
+    .mainIndex .carousel {
+      grid-area: carousel;
+      margin-top: 0.3rem; }
+      .mainIndex .carousel .carousel-caption {
+        background-color: rgba(249, 249, 224, 0.6);
         color: #540b0e;
-        margin-top: 1rem;
-        margin-left: 2rem;
-        text-align: left; }
-      .mainIndex .parrDos p {
-        text-align: justify;
-        margin-left: 1.1rem;
-        margin-right: 1.1rem; }
+        font-family: 'Fjalla One', sans-serif;
+        text-shadow: 1px 1px #a5a5a5;
+        border-radius: 4%; }
+      .mainIndex .carousel .carousel-item {
+        height: 40rem; }
+        .mainIndex .carousel .carousel-item img {
+          margin-top: -10rem; }
+    .mainIndex .tope {
+      display: none; }
+    .mainIndex .parrDos {
+      display: flex;
+      box-shadow: none;
+      margin: auto;
+      width: 95%; }
+      .mainIndex .parrDos .uno {
+        box-shadow: -2px 2px 10px #a5a5a5;
+        margin-right: 1.2rem; }
+        .mainIndex .parrDos .uno .tit {
+          font-size: 1.9rem;
+          margin-top: 1rem;
+          margin-left: 2rem;
+          text-align: left; }
+        .mainIndex .parrDos .uno p {
+          font-size: 1.2rem; }
+      .mainIndex .parrDos .dos {
+        display: contents;
+        display: block;
+        margin-top: auto;
+        margin-bottom: auto;
+        justify-content: center;
+        align-items: center; }
+        .mainIndex .parrDos .dos img {
+          width: 100%;
+          height: 50%;
+          justify-content: center;
+          align-items: center;
+          box-shadow: -2px 2px 10px #a5a5a5; }
     .mainIndex .final {
       grid-area: final; }
       .mainIndex .final .tit {
-        font-family: 'Fjalla One', sans-serif;
-        font-size: 1.5rem;
+        font-size: 1rem;
         color: #540b0e;
         margin-top: 1rem;
-        margin-left: 2rem;
         text-align: left; }
       .mainIndex .final .mapa {
         display: block;
@@ -436,6 +493,7 @@ footer {
         width: 90%;
         box-shadow: -2px 2px 10px #a5a5a5;
         margin-bottom: 3rem; }
+  /* SOBRE NOSOTROS */
   .mainSobrenosotros .subTit {
     font-family: 'Fjalla One', sans-serif;
     color: #540b0e;
@@ -467,32 +525,56 @@ footer {
       width: 90%;
       border-radius: 10%;
       box-shadow: -2px 2px 10px #a5a5a5; }
-  .mainRemates .prox .fut1 img {
-    width: 10%;
-    height: 6%;
-    margin-top: 0.5rem; }
-  .mainRemates .prox .fut2 img {
-    width: 10%;
-    height: 6%;
-    margin-top: 0.5rem; }
-  .mainRemates .pasados .rem {
-    width: 40%; } }
+  /* REMATES */
+  .mainRemates .prox {
+    width: 90%; }
+    .mainRemates .prox .tit {
+      font-size: 1.8rem; }
+    .mainRemates .prox .proxi {
+      display: flex;
+      flex-direction: row;
+      margin: auto;
+      height: 100%; }
+      .mainRemates .prox .proxi p {
+        font-size: 2rem; }
+      .mainRemates .prox .proxi img {
+        height: 100%;
+        width: 100%; }
+  .mainRemates .pasados {
+    grid-area: pasados;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .mainRemates .pasados .rem {
+      width: 85%;
+      box-shadow: -2px 2px 10px #a5a5a5; }
+      .mainRemates .pasados .rem h5 {
+        font-size: 0.8rem; }
+      .mainRemates .pasados .rem a {
+        display: block;
+        margin: auto;
+        background-color: #540b0e;
+        border: #540b0e;
+        font-size: 0.7rem; } }
 
 @media screen and (min-width: 1024px) {
+  /* HEADER */
   header {
     background-color: #eeebdd;
     width: 100%;
-    display: grid;
-    grid-template-areas: "tope" "menuYlogo"; }
-    header .tope .titulo {
-      margin-top: 0.5rem;
-      margin-bottom: -0.8rem;
-      font-size: 2.4rem; }
-    header .tope .subtitulo {
-      margin-bottom: 0.7rem;
-      font-size: 2rem;
-      color: #540b0e;
-      text-shadow: 1px 1px #a5a5a5; }
+    display: grid; }
+    header .arr {
+      display: flex; }
+      header .arr .social {
+        display: contents; }
+        header .arr .social ul {
+          margin-right: 2rem; }
+          header .arr .social ul li {
+            margin-left: 0.5rem; }
+            header .arr .social ul li img {
+              height: 2.8rem; }
+      header .arr .logo {
+        margin-left: 2.4rem; }
     header .menuYpag .navCel {
       display: none; }
     header .menuYpag .menuNav .menuNav {
@@ -504,7 +586,10 @@ footer {
       box-shadow: -1px 1px 5px #a5a5a5; }
     header .menuYpag .pagina {
       display: none; }
+  /* INDEX */
   .mainIndex {
+    background-image: none;
+    background-color: #eeebdd;
     grid-template-areas: "parrUno parrUno" "logo2" "primerImagen parrDos" "final final"; }
     .mainIndex .parrUno {
       grid-area: parrUno;
@@ -516,14 +601,6 @@ footer {
       font-size: 3rem;
       margin-top: 3rem;
       margin-bottom: 1rem; }
-    .mainIndex .logo2 {
-      width: 35%;
-      display: block;
-      margin: auto;
-      margin-top: 2rem;
-      margin-bottom: 2rem; }
-    .mainIndex .primerImagen {
-      width: 80%; }
     .mainIndex .parrDos {
       margin-top: 2rem;
       margin-bottom: 2rem; }
@@ -553,46 +630,69 @@ footer {
         box-shadow: -2px 2px 10px #a5a5a5;
         margin-bottom: 3rem; }
   /* SOBRE NOSOTROS */
-  .mainSobrenosotros {
-    background-image: url(../../img/lineas.jpg);
-    display: grid;
-    grid-template-areas: "agricultura ganaderia planta corrales"; }
-    .mainSobrenosotros .agricultura {
-      grid-area: agricultura; }
-    .mainSobrenosotros .ganaderia {
-      grid-area: ganaderia; }
-    .mainSobrenosotros .planta {
-      grid-area: planta; }
-    .mainSobrenosotros .corrales {
-      grid-area: corrales; }
-    .mainSobrenosotros .subTit {
-      display: none; }
-    .mainSobrenosotros .card {
-      margin: auto;
-      width: 100%;
-      margin-bottom: -1.5rem; }
-      .mainSobrenosotros .card a {
-        display: block;
-        width: 90%;
-        font-size: 0.8rem;
-        margin: auto;
-        background-color: #540b0e;
-        border: #540b0e; }
-        .mainSobrenosotros .card a a:hover {
-          background-color: #eeebdd; }
-      .mainSobrenosotros .card .card-title {
-        text-align: center;
-        font-size: 1.5rem; }
-      .mainSobrenosotros .card .card-text {
+  .mainSobrenosotros .subtit {
+    display: none; }
+    .mainSobrenosotros .subtit .subTit {
+      font-size: 3rem;
+      text-align: left;
+      margin: 1.5rem;
+      margin-top: -1rem; }
+  .mainSobrenosotros .agricultura {
+    display: flex;
+    box-shadow: none;
+    margin-top: 1rem; }
+    .mainSobrenosotros .agricultura .texxt {
+      width: 130%; }
+      .mainSobrenosotros .agricultura .texxt h5 {
+        font-size: 2rem;
+        margin: 1rem; }
+      .mainSobrenosotros .agricultura .texxt p {
         text-align: justify;
-        font-size: 0.9rem; }
-      .mainSobrenosotros .card img {
-        display: block;
-        margin: auto;
-        height: auto;
-        width: 90%;
-        border-radius: 10%;
-        box-shadow: -2px 2px 10px #a5a5a5; }
+        margin: 0.5rem; }
+    .mainSobrenosotros .agricultura .foto img {
+      box-shadow: -2px 2px 10px #a5a5a5;
+      width: 90%; }
+  .mainSobrenosotros .ganaderia {
+    display: flex;
+    flex-direction: row-reverse;
+    box-shadow: none; }
+    .mainSobrenosotros .ganaderia .texxt {
+      width: 130%; }
+      .mainSobrenosotros .ganaderia .texxt h5 {
+        font-size: 2rem; }
+    .mainSobrenosotros .ganaderia .foto img {
+      box-shadow: -2px 2px 10px #a5a5a5;
+      width: 90%; }
+  .mainSobrenosotros .planta {
+    display: flex;
+    box-shadow: none; }
+    .mainSobrenosotros .planta .texxt {
+      width: 130%; }
+      .mainSobrenosotros .planta .texxt h5 {
+        font-size: 2rem;
+        margin: 1rem; }
+      .mainSobrenosotros .planta .texxt p {
+        text-align: justify;
+        margin: 0.5rem; }
+    .mainSobrenosotros .planta .foto img {
+      box-shadow: -2px 2px 10px #a5a5a5;
+      width: 90%; }
+  .mainSobrenosotros .feedlot {
+    display: flex;
+    flex-direction: row-reverse;
+    box-shadow: none; }
+    .mainSobrenosotros .feedlot .texxt {
+      width: 130%; }
+      .mainSobrenosotros .feedlot .texxt h5 {
+        font-size: 2rem;
+        margin: 1rem; }
+      .mainSobrenosotros .feedlot .texxt p {
+        text-align: justify;
+        margin: 0.5rem; }
+    .mainSobrenosotros .feedlot .foto img {
+      box-shadow: -2px 2px 10px #a5a5a5;
+      width: 90%; }
+  /* GALERIA */
   .mainGaleria .container {
     width: 90%;
     height: 100%;
@@ -622,8 +722,7 @@ footer {
     .mainRemates .prox {
       display: grid;
       margin-left: 10%;
-      margin-right: 10%;
-      grid-template-areas: "h2 h2" "fut1 fut2"; }
+      margin-right: 10%; }
       .mainRemates .prox h2 {
         grid-area: h2; }
       .mainRemates .prox .fut1 {
@@ -651,18 +750,71 @@ footer {
     footer .derechos {
       padding-top: 0.2rem; } }
 
+/* REMATES */
+.mainRemates .prox {
+  margin: auto;
+  margin-top: 1rem;
+  grid-template-areas: "tit" "proxi"; }
+  .mainRemates .prox .tit {
+    grid-area: tit;
+    font-family: 'Fjalla One', sans-serif;
+    margin: 1rem; }
+  .mainRemates .prox .proxi {
+    grid-area: proxi;
+    display: flex;
+    margin-left: 1.5rem; }
+    .mainRemates .prox .proxi .fut1 {
+      display: flex;
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; }
+      .mainRemates .prox .proxi .fut1 img {
+        width: 20%;
+        height: 70%;
+        margin-top: 0.5rem; }
+      .mainRemates .prox .proxi .fut1 p {
+        padding: 0.5rem;
+        margin-top: 0.8rem;
+        font-size: 0.8rem; }
+    .mainRemates .prox .proxi .fut2 {
+      display: flex;
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; }
+      .mainRemates .prox .proxi .fut2 img {
+        width: 20%;
+        height: 70%;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem; }
+      .mainRemates .prox .proxi .fut2 p {
+        padding: 0.5rem;
+        margin-top: 0.8rem;
+        font-size: 0.8rem; }
+
+.mainRemates .pasados {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .mainRemates .pasados .rem {
+    width: 30%; }
+    .mainRemates .pasados .rem h5 {
+      font-size: 0.8rem; }
+    .mainRemates .pasados .rem a {
+      display: block;
+      margin: auto;
+      background-color: #540b0e;
+      border: #540b0e;
+      font-size: 0.7rem; }
+
+/* CONTACTO */
 .mainContacto {
   background-image: url(../../img/lineas.jpg);
   background-repeat: repeat-y;
   background-size: 100%;
-  display: grid;
-  grid-template-areas: "contactForm" "mapa";
-  align-items: center; }
+  height: 100%; }
   .mainContacto .ubicYcontacto {
     border: solid #3d3b3c;
     margin: auto;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     background-color: rgba(255, 255, 255, 0.7);
     box-shadow: -2px 2px 10px #a5a5a5;
     display: flex;

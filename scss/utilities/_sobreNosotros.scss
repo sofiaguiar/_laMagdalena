@@ -3,47 +3,140 @@
 
 .mainSobrenosotros{
     background-image: url(../../img/lineas.jpg);
-    background-size: 100%;
+    background-size: 70%;
     height: 100%;
     padding-bottom: 3rem;
-    .subTit{
-        font-family: 'Fjalla One', sans-serif;
-        color: $colorPrincipal;
-        font-size: 2.5rem;
-        text-align: center;
-        padding-top: 1rem;
+    display: grid;
+    grid-template-areas: "subtit"
+                         "agricultura"
+                         "ganaderia"
+                         "planta"
+                         "feedlot";
+    .subtit{
+        grid-area: subtit;
+        margin-top: 1rem;
+        .subTit{
+            font-size: 1.7rem;
+            color: $colorPrincipal;
+            font-family: 'Fjalla One', sans-serif;
+            text-shadow: 1px 1px $sombra;
+            text-align: center;
+        }
     }
-    .card{
+    .agricultura{
+        grid-area: agricultura;
+        background-color: rgba(238, 235, 221, 0.6);
+        box-shadow: -2px 2px 10px $sombra;
+        width: 95%;
+        display: block;
         margin: auto;
-        margin-top: 6rem;
-        a {
-            display: block;
-            width: 80%;
-            margin: auto;
-            background-color: $colorPrincipal;
-            border: $colorPrincipal; 
-            :hover{
-                background-color: rgb(238, 235, 221);
+        margin-bottom: 1rem;
+        .texxt{
+            h5{
+                font-size: 1.5rem;
+                font-family: 'Fjalla One', sans-serif;
+                text-shadow: 1px 1px $sombra;
+                margin: 1rem;
+            }
+            p{
+                text-align: justify;
+                margin: 0.5rem;
             }
         }
-        .card-title{
-            text-align: center;
-            font-family: 'Fjalla One', sans-serif;
+        .foto{
+            img{
+                width: 80%;
+                display: block;
+                margin: auto;
+                margin-bottom: 0.5rem;
+            }
         }
-        .card-text{
-            text-align: center;
+    }
+    .ganaderia{
+        grid-area: ganaderia;
+        background-color: rgba(238, 235, 221, 0.6);
+        box-shadow: -2px 2px 10px $sombra;
+        width: 95%;
+        display: block;
+        margin: auto;
+        margin-bottom: 1rem;
+        .texxt{
+            h5{
+                font-size: 1.5rem;
+                font-family: 'Fjalla One', sans-serif;
+                text-shadow: 1px 1px $sombra;
+                margin: 1rem;
+            }
+            p{
+                text-align: justify;
+                margin: 0.5rem;
+            }
         }
-        img{
-            display: block;
-            margin: auto;
-            height: auto;
-            width: 90%;
-            border-radius: 10%;
-            box-shadow: -2px 2px 10px $sombra; 
+        .foto{
+            img{
+                width: 80%;
+                display: block;
+                margin: auto;
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+    .planta{
+        grid-area: planta;
+        background-color: rgba(238, 235, 221, 0.6);
+        box-shadow: -2px 2px 10px $sombra;
+        width: 95%;
+        display: block;
+        margin: auto;
+        margin-bottom: 1rem;
+        .texxt{
+            h5{
+                font-size: 1.5rem;
+                font-family: 'Fjalla One', sans-serif;
+                text-shadow: 1px 1px $sombra;
+                margin: 1rem;
+            }
+            p{
+                text-align: justify;
+                margin: 0.5rem;
+            }
+        }
+        .foto{
+            img{
+                width: 80%;
+                display: block;
+                margin: auto;
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+    .feedlot{
+        grid-area: feedlot;
+        background-color: rgba(238, 235, 221, 0.6);
+        box-shadow: -2px 2px 10px $sombra;
+        width: 95%;
+        display: block;
+        margin: auto;
+        margin-bottom: 1rem;
+        .texxt{
+            h5{
+                font-size: 1.5rem;
+                font-family: 'Fjalla One', sans-serif;
+                text-shadow: 1px 1px $sombra;
+                margin: 1rem;
+            }
+            p{
+                text-align: justify;
+                margin: 0.5rem;
+            }
+        }
+        .foto{
+            img{
+                width: 80%;
+                display: block;
+                margin: auto;
+                margin-bottom: 0.5rem;
+            }
         }
     }    
-}
-
-.footerSobrenosotros{
-    margin: 0%;
 }

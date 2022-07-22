@@ -26,11 +26,94 @@ body{
 header{
     background-color: rgb(238, 235, 221);
     width: 100%;
-    position: sticky;
-    top: 0;   
     display: grid;
-    grid-template-areas: "tope"
+    grid-template-areas: "arr"
                          "menuYlogo";
+    
+    .arr{
+        grid-area: arr;
+        .social{
+            display: none;
+            ul{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                li{
+                    list-style: none;
+
+                    img{
+                        height: 2rem;
+                    }
+                }
+         
+            }
+        }    
+        .logo{
+            height: 6rem;
+            display: block;
+            margin: auto;
+            margin-top: 0.3rem;
+            margin-bottom: 1.2rem;
+        }
+    }
+    
+    
+    .menuYpag{
+        grid-area: menuYlogo;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(246, 243, 235);
+        box-shadow: -1px 1px 5px $sombra;     
+        .navCel{
+            margin-top: 1%;
+        } 
+        ul li{
+            opacity: 90%;
+            padding: 1rem;
+            text-align: left;
+        }
+        ul li:hover{
+            font-weight: bold;
+        }
+        .menuNav{
+            display: none;
+        }
+        .pagina{
+            display: block;
+            font-size: 1.2rem;
+            margin-right: 1rem;
+            margin-top: 1rem;
+            font-family: 'Fjalla One', sans-serif;
+            color: $clarito;
+        }
+        
+    }
+    
+}
+
+.mainIndex{
+    display: grid;
+    background-image: url(../img/lineas.jpg);
+    background-size: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    grid-template-areas: "carousel"
+                         "tope"
+                         "parrDos"
+                         "final";
+    .carousel{
+        grid-area: carousel;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        .carousel-caption{
+            background-color: rgba(249, 249, 224, 0.6);
+            color: $colorPrincipal;
+            font-family: 'Fjalla One', sans-serif;
+            text-shadow: 1px 1px $sombra;
+            border-radius: 4%;
+        }
+    }
+
     .tope{
         grid-area: tope;
         .titulo{
@@ -53,98 +136,34 @@ header{
             text-shadow: 1px 1px $sombra;
         }
     }
-    .menuYpag{
-        grid-area: menuYlogo;
-        display: flex;
-        justify-content: space-between;
-        background-color: rgb(246, 243, 235);
-        box-shadow: -1px 1px 5px $sombra;     
-        .navCel{
-            margin-top: 1%;
-        } 
-        ul li{
-            opacity: 90%;
-            padding: 1rem;
-            text-align: left;
-        }
-        li:nth-child(1){
-            text-decoration: underline;
-            text-underline-offset: 0.4rem;
-        }
-        .menuNav{
-            display: none;
-        }
-        .pagina{
-            display: block;
-            font-size: 1.2rem;
-            margin-right: 1rem;
-            margin-top: 1rem;
-            font-family: 'Fjalla One', sans-serif;
-            color: $colorOscuro;
-        }
-        
-    }
-}
-
-.mainIndex{
-    display: grid;
-    background-image: url(../img/lineas.jpg);
-    background-size: 270%;
-    height: 100%;
-    margin-bottom: 0;
-    grid-template-areas: "parrUno"
-                         "logo2"
-                         "primerImagen"
-                         "parrDos"
-                         "final";
-    .parrUno{
-        grid-area: parrUno;
-        font-family: 'Fjalla One', sans-serif;
-        text-align: center;
-        font-weight: bold;
-        color: $colorPrincipal;
-        font-size: 2rem;
-        margin-top: 3rem;
-        margin-bottom: -4%;
-    }
-    .logo2{
-        width: 70%;
-        display: block;
-        margin: auto;
-        margin-bottom: 2rem;
-    }
-
-    .primerImagen{
-        grid-area: primerImagen;
-        height: auto;
-        width: 90%;
-        display: block;
-        margin: auto;
-        box-shadow: -2px 2px 10px $sombra;
-        margin-bottom: 2rem;
-        margin-top: 1.3rem;
-    }
+   
     .parrDos{
         grid-area: parrDos;
         display: block;
         margin: auto;
         width: 90%;
-        background-color: rgb(246, 243, 235);
+        background-color: rgba(238, 235, 221, 0.6);
         box-shadow: -2px 2px 10px $sombra;
-        border-radius: 8%;
-        .tit{
-            font-family: 'Fjalla One', sans-serif;
-            font-size: 1.5rem;
-            color: $colorPrincipal;
-            margin-top: 1rem;
-            margin-left: 2rem;
-            text-align: left;
+        border-radius: 2%;
+        .uno{
+            .tit{
+                font-family: 'Fjalla One', sans-serif;
+                font-size: 1.5rem;
+                color: $colorPrincipal;
+                margin-top: 1rem;
+                margin-left: 2rem;
+                text-align: left;
+            }
+            p{
+                text-align: justify;
+                margin-left: 1.1rem;
+                margin-right: 1.1rem;
+            }
         }
-        p{
-            text-align: justify;
-            margin-left: 1.1rem;
-            margin-right: 1.1rem;
+        .dos{
+            display: none;
         }
+       
     }
     .final{
         grid-area: final;
@@ -200,16 +219,10 @@ footer{
 /* MEDIA QUERIES PPAL */
 @media screen and (min-width: 768px){
     
+    /* INDEX */
+
     header{
-        .tope{
-            .titulo{
-                font-size: 2.5rem;
-            }
-            .subtitulo{
-                font-size: 1.3rem;
-                margin-bottom: 1rem;
-            }
-        }
+    
         .menuYpag{
             .navCel{
                 display: none;
@@ -221,7 +234,7 @@ footer{
                 display: contents;
                 display: flex;
                 width: 100%;
-                height: 4rem;
+                height: 3.5rem;
                 justify-content: center;
                 background-color: rgb(246, 243, 235);
                 box-shadow: -1px 1px 5px $sombra; 
@@ -229,13 +242,13 @@ footer{
                         list-style: none;
                         display: flex;
                         justify-content: center;
+                        align-items: center;
                         li{
                             a{
                                 text-decoration: none;
                                 font-family: 'Ubuntu Condensed', sans-serif;
-                                font-size: 1.8rem;
+                                font-size: 1.5rem;
                                 color: $colorOscuro;
-                                font-weight: bold;  
                             } 
                         }
                     }
@@ -245,55 +258,78 @@ footer{
         
     }
 
+    /* INDEX */
+
     .mainIndex{
-        background-size: 180%;
-        .parrUno{
-            font-size: 2.5rem;
-            margin-top: 4rem;
+        display: grid;
+        background-image: url(../img/lineas.jpg);
+        background-size: 250%;
+        height: 100%;
+        margin-bottom: 0;
+        grid-template-areas: "carousel"
+                             "tope"
+                             "parrDos"
+                             "final";
+        .carousel{
+            grid-area: carousel;
+            margin-top: 0.3rem;
+            .carousel-caption{
+                background-color: rgba(249, 249, 224, 0.6);
+                color: $colorPrincipal;
+                font-family: 'Fjalla One', sans-serif;
+                text-shadow: 1px 1px $sombra;
+                border-radius: 4%;
+            }
+            .carousel-item{
+                height: 40rem;
+                img{
+                  margin-top: -10rem;  
+                }
+            }
         }
-        .logo2{
-            width: 70%;
-        }
-        .primerImagen{
-            grid-area: primerImagen;
-            height: auto;
-            width: 90%;
-            display: block;
-            margin: auto;
-            box-shadow: -2px 2px 10px $sombra;
-            margin-bottom: 2rem;
-            margin-top: 1.3rem;
+        .tope{
+            display: none;
         }
         .parrDos{
-            grid-area: parrDos;
-            display: block;
+            display: flex;
+            box-shadow: none;
             margin: auto;
-            width: 90%;
-            background-color: rgb(246, 243, 235);
-            box-shadow: -2px 2px 10px $sombra;
-            border-radius: 8%;
-            .tit{
-                font-family: 'Fjalla One', sans-serif;
-                font-size: 1.5rem;
-                color: $colorPrincipal;
-                margin-top: 1rem;
-                margin-left: 2rem;
-                text-align: left;
+            width: 95%;
+            .uno{
+                box-shadow: -2px 2px 10px $sombra;
+                margin-right: 1.2rem;
+                .tit{
+                    font-size: 1.9rem;
+                    margin-top: 1rem;
+                    margin-left: 2rem;
+                    text-align: left;
+                }
+                p{
+                    font-size: 1.2rem;
+                }
             }
-            p{
-                text-align: justify;
-                margin-left: 1.1rem;
-                margin-right: 1.1rem;
-            }
+            .dos{
+                display: contents;
+                display: block;
+                margin-top: auto;
+                margin-bottom: auto;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 100%;
+                    height: 50%;
+                    justify-content: center;
+                    align-items: center;
+                    box-shadow: -2px 2px 10px $sombra;
+                }
+            } 
         }
         .final{
             grid-area: final;
             .tit{
-                font-family: 'Fjalla One', sans-serif;
-                font-size: 1.5rem;
+                font-size: 1rem;
                 color: $colorPrincipal;
                 margin-top: 1rem;
-                margin-left: 2rem;
                 text-align: left;  
             }
             .mapa{
@@ -304,8 +340,9 @@ footer{
                 margin-bottom: 3rem;
             }
         }
-       
     }
+    
+    /* SOBRE NOSOTROS */
 
     .mainSobrenosotros{
 
@@ -349,52 +386,78 @@ footer{
         }    
     }
 
+    /* REMATES */
+
     .mainRemates{
         .prox{
-            .fut1{
-                img{
-                    width: 10%;
-                    height: 6%;
-                    margin-top: 0.5rem;
-                }
+            width: 90%;
+            .tit{
+                font-size: 1.8rem;
             }
-            .fut2{
+            .proxi{
+                display: flex;
+                flex-direction: row;
+                margin: auto;
+                height: 100%;
+                p{
+                    font-size: 2rem;
+                }
                 img{
-                    width: 10%;
-                    height: 6%;
-                    margin-top: 0.5rem;
+                    height: 100%;
+                    width: 100%;
                 }
             }
         }
         .pasados{
+            grid-area: pasados;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             .rem{
-                width: 40%;
+                width: 85%;
+                box-shadow: -2px 2px 10px $sombra;
+                h5 {
+                    font-size: 0.8rem;
+                }
+                a{
+                    display: block;
+                    margin: auto;
+                    background-color: $colorPrincipal;
+                    border: $colorPrincipal; 
+                    font-size: 0.7rem;
+                }
             }
+            
         }
     }
 }
 
 @media screen and (min-width: 1024px) {
 
+    /* HEADER */
+
     header{
         background-color: rgb(238, 235, 221);
         width: 100%;
         display: grid;
-        grid-template-areas: "tope"
-                             "menuYlogo";
-        .tope{
-            .titulo{
-                margin-top: 0.5rem;
-                margin-bottom: -0.8rem;
-                font-size: 2.4rem;
+        .arr{
+            display: flex;
+            .social{
+                display: contents;
+                ul{
+                    margin-right: 2rem;
+                    li{
+                        margin-left: 0.5rem;
+                        img{
+                            height: 2.8rem;
+                        }
+                    }
+                }
+            }  
+            .logo{
+                margin-left: 2.4rem;
             }
-            .subtitulo{
-                margin-bottom: 0.7rem;
-                font-size: 2rem;
-                color: $colorPrincipal;
-                text-shadow: 1px 1px $sombra;
-            }
-        }
+        }     
         .menuYpag{       
             .navCel{
                 display: none;
@@ -415,7 +478,11 @@ footer{
         }
     }
 
+    /* INDEX */
+
     .mainIndex{
+        background-image: none;
+        background-color: rgb(238, 235, 221);
         grid-template-areas: "parrUno parrUno"
                              "logo2"
                              "primerImagen parrDos"
@@ -431,17 +498,7 @@ footer{
         margin-top: 3rem;
         margin-bottom: 1rem;
     }
-    .logo2{
-        width: 35%;
-        display: block;
-        margin: auto;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    }
-
-    .primerImagen{
-        width: 80%;
-    }
+  
     .parrDos{
         margin-top: 2rem;
         margin-bottom: 2rem;
@@ -482,57 +539,101 @@ footer{
     /* SOBRE NOSOTROS */
 
     .mainSobrenosotros{
-        background-image: url(../../img/lineas.jpg);
-        display: grid;
-        grid-template-areas: "agricultura ganaderia planta corrales";
-        .agricultura{
-            grid-area: agricultura;
-        }
-        .ganaderia{
-            grid-area: ganaderia;
-        }
-        .planta{
-            grid-area: planta;
-        }
-        .corrales{
-            grid-area: corrales;
-        }
-        .subTit{
+        .subtit{
             display: none;
+            .subTit{
+                font-size: 3rem;
+                text-align: left;
+                margin: 1.5rem;
+                margin-top: -1rem;
+               
+            }
         }
-        .card{
-            margin: auto;
-            width: 100%;
-            margin-bottom: -1.5rem;
-            a {
-                display: block;
-                width: 90%;
-                font-size: 0.8rem;
-                margin: auto;
-                background-color: $colorPrincipal;
-                border: $colorPrincipal; 
-                a:hover{
-                    background-color: rgb(238, 235, 221);
+        .agricultura{
+            display: flex;
+            box-shadow: none;
+            margin-top: 1rem;
+            .texxt{
+                width: 130%;
+                h5{
+                    font-size: 2rem;
+                    margin: 1rem;
+                }
+                p{
+                    text-align: justify;
+                    margin: 0.5rem;
                 }
             }
-            .card-title{
-                text-align: center;
-                font-size: 1.5rem;
+            .foto{
+                img{
+                    box-shadow: -2px 2px 10px $sombra;
+                    width: 90%;
+                }
             }
-            .card-text{
-                text-align: justify;
-                font-size: 0.9rem;
+        }
+        .ganaderia{
+            display: flex;
+            flex-direction: row-reverse;
+            box-shadow: none;
+            .texxt{
+                width: 130%;
+                h5{
+                    font-size: 2rem;
+                }
             }
-            img{
-                display: block;
-                margin: auto;
-                height: auto;
-                width: 90%;
-                border-radius: 10%;
-                box-shadow: -2px 2px 10px $sombra; 
+            .foto{
+                img{
+                    box-shadow: -2px 2px 10px $sombra;
+                    width: 90%;
+                }
+            }
+        }
+        .planta{
+            display: flex;
+            box-shadow: none;
+            .texxt{
+                width: 130%;
+                h5{
+                    font-size: 2rem;
+                    margin: 1rem;
+                }
+                p{
+                    text-align: justify;
+                    margin: 0.5rem;
+                }
+            }
+            .foto{
+                img{
+                    box-shadow: -2px 2px 10px $sombra;
+                    width: 90%;
+                }
+            }
+        }
+        .feedlot{
+            display: flex;
+            flex-direction: row-reverse;
+            box-shadow: none;
+            .texxt{
+                width: 130%;
+                h5{
+                    font-size: 2rem;
+                    margin: 1rem;
+                }
+                p{
+                    text-align: justify;
+                    margin: 0.5rem;
+                }
+            }
+            .foto{
+                img{
+                    box-shadow: -2px 2px 10px $sombra;
+                    width: 90%;
+                }
             }
         }    
     }
+    
+    /* GALERIA */
 
     .mainGaleria .container{
         width: 90%;
@@ -569,8 +670,6 @@ footer{
             display: grid;
             margin-left: 10%;
             margin-right: 10%;
-            grid-template-areas: "h2 h2"
-                                 "fut1 fut2";
             h2{
                 grid-area: h2;
             }
@@ -616,20 +715,93 @@ footer{
     }
 }
 
+/* REMATES */
+
+.mainRemates{
+    .prox{
+        margin: auto;
+        margin-top: 1rem;
+        grid-template-areas: "tit"
+                             "proxi";
+        .tit {
+            grid-area: tit;
+            font-family: 'Fjalla One', sans-serif;
+            margin: 1rem;
+        }
+        .proxi{
+            grid-area: proxi;
+            display: flex;
+            margin-left: 1.5rem;
+            .fut1{
+                display: flex;
+                margin-right: 0.5rem;
+                margin-left: 0.5rem;
+                img{
+                    width: 20%;
+                    height: 70%;
+                    margin-top: 0.5rem;
+                }
+                p{
+                    padding: 0.5rem;
+                    margin-top: 0.8rem;
+                    font-size: 0.8rem;
+                }
+            }
+            .fut2{
+                display: flex;
+                margin-right: 0.5rem;
+                margin-left: 0.5rem;
+                img{
+                    width: 20%;
+                    height: 70%;
+                    margin-top: 0.5rem;
+                    margin-bottom: 1rem;
+                }
+                p{
+                    padding: 0.5rem;
+                    margin-top: 0.8rem;
+                    font-size: 0.8rem;
+                } 
+            }
+        }
+        
+        
+    }
+    .pasados{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .rem{
+            width: 30%;
+            h5 {
+                font-size: 0.8rem;
+            }
+            a{
+                display: block;
+                margin: auto;
+                background-color: $colorPrincipal;
+                border: $colorPrincipal; 
+                font-size: 0.7rem;
+            }
+        }
+        
+    }
+}
+
+
+/* CONTACTO */
 
 .mainContacto{
     background-image: url(../../img/lineas.jpg);
     background-repeat: repeat-y;
     background-size: 100%;
-    display: grid;
-    grid-template-areas: "contactForm"
-                         "mapa";
-    align-items: center;
+    height: 100%;
+
     .ubicYcontacto{
         border: solid $colorOscuro;
         margin: auto;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
         background-color: $clarito;
         box-shadow: -2px 2px 10px $sombra;
         display: flex;
