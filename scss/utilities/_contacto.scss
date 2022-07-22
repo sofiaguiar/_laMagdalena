@@ -9,9 +9,7 @@
 }
 
 .mainContacto{
-    background-image: url(../../img/lineas.jpg);
-    background-repeat: repeat-y;
-    background-size: 100%;
+    background-color: rgb(238, 235, 221);
     display: grid;
     grid-template-areas: "contactForm"
                          "mapa";

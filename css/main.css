@@ -1,7 +1,6 @@
 /* SOBRE NOSOTROS */
 .mainSobrenosotros {
-  background-image: url(../../img/lineas.jpg);
-  background-size: 70%;
+  background-color: #eeebdd;
   height: 100%;
   padding-bottom: 3rem;
   display: grid;
@@ -107,9 +106,7 @@
   color: rgba(255, 255, 255, 0.7); }
 
 .mainContacto {
-  background-image: url(../../img/lineas.jpg);
-  background-repeat: repeat-y;
-  background-size: 100%;
+  background-color: #eeebdd;
   display: grid;
   grid-template-areas: "contactForm" "mapa";
   align-items: center; }
@@ -215,8 +212,7 @@
 
 /* REAMTES */
 .mainRemates {
-  background-image: url(../../img/lineas.jpg);
-  background-size: 80%;
+  background-color: #eeebdd;
   display: grid;
   grid-template-areas: "prox" "pasados"; }
   .mainRemates .prox {
@@ -808,13 +804,14 @@ footer {
 .mainContacto {
   background-image: url(../../img/lineas.jpg);
   background-repeat: repeat-y;
-  background-size: 100%;
+  background-size: 80%;
   height: 100%; }
   .mainContacto .ubicYcontacto {
     border: solid #3d3b3c;
     margin: auto;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 2rem;
     background-color: rgba(255, 255, 255, 0.7);
     box-shadow: -2px 2px 10px #a5a5a5;
     display: flex;
